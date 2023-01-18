@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Translater Api Uygulaması</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url(css/all.css);
+    </style>
+</head>
+
+<body class="d-flex justify-content-center align-items-center bg-info">
+
+    <div class="container p-3 rounded-3 bg-light">
+
+        <div class="row g-0 p-4 border border-dark rounded-top">
+            <div class="col-5">
+
+                <div class="row">
+                    <div class="col-2 d-flex justify-content-center align-items-center fs-4">
+                        <i data-id="from" class="fa-solid fa-volume-high"></i>
+                    </div>
+
+                    <div class="col-2 d-flex justify-content-center align-items-center fs-4">
+                        <i data-id="from" class="fa-solid fa-clipboard"></i>
+                    </div>
+
+                    <div class="col-8">
+                        <select class="form-select" id="from-lang"></select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-2 d-flex justify-content-center align-items-center fs-4">
+                <i id="exchange" class="fa-solid fa-arrow-right-arrow-left"></i>
+            </div>
+            <div class="col-5">
+                <div class="row">
+                    <div class="col-8">
+                        <select class="form-select" id="to-lang"></select>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center fs-4">
+                        <i data-id="to" class="fa-solid fa-clipboard"></i>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center align-items-center fs-4">
+                        <i data-id="to" class="fa-solid fa-volume-high"></i>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row g-0 border border-top-0 border-dark rounded-bottom">
+            <div class="text-controls d-flex">
+                <textarea id="from-text" class="from-text form-control" placeholder="Metin Girin"></textarea>
+                <textarea id="to-text" class="to-text form-control" placeholder="Çeviri" readonly disabled></textarea>
+            </div>
+        </div>
+
+
+        <div class="row  d-flex g-0 mt-3">
+            <button id="btn-translate" class="btn btn-secondary flex-fill">Çevir</button>
+
+        </div>
+
+
+
+
+    </div>
+
+
+
+    <script src="js/custom/languages.js"></script>
+    <script src="js/bootstap/bootstrap.bundle.min.js"></script>
+    <script src="js/custom/extra.js"></script>
+</body>
+
+</html>

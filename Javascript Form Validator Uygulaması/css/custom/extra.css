@@ -1,0 +1,24 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: "Montserrat";
+}
+
+
+.card-footer i{
+    cursor: pointer;
+}
+
+
+.card{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.error{
+    border:1px solid red;
+}

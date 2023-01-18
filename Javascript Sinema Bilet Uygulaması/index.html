@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Sinema Bilet Uygulaması</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        @import url(css/all.css);
+    </style>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container">
+
+        <div class="screen mx-auto"></div>
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat "></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat reserved"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+        <div class="row">
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+        </div>
+
+
+
+    </div>
+
+    <div class="movie-list mt-3">
+        <select class="form-select" name="" id="movies">
+            <option  disabled>Film Seçiniz</option>
+            <option  selected value="20">Movie 1</option>
+            <option value="22">Movie 2</option>
+            <option value="23">Movie 3</option>
+        </select>
+    </div>
+
+    <div class="container">
+
+        <div class="col">
+            <ul class="info list-group  px-2 py-3 text-secondary text-center rounded d-flex flex-row justify-content-center">
+                <li class="list-group-item list-group-item-dark rounded m-2">
+                    <div class="seat selected mx-auto"></div>
+                    <span class="text-sm">Seçili</span>
+                </li>
+                <li class="list-group-item list-group-item-dark rounded m-2">
+                    <div class="seat mx-auto"></div>
+                    <span>Boş</span>
+                </li>
+                <li class="list-group-item list-group-item-dark rounded m-2">
+                    <div class="seat reserved mx-auto"></div>
+                    <span>Dolu</span>
+                </li>
+            </ul>
+        </div>
+       
+    </div>
+
+
+    <p class="text text-white">
+        <span id="count" class="text-warning">3</span> adet koltuk için hesaplanan ücret <span id="amount" class="text-warning"></span> TL.
+    </p>
+
+  
+
+    <script src="js/bootstap/bootstrap.bundle.min.js"></script>
+    <script src="js/custom/extra.js"></script>
+</body>
+
+</html>

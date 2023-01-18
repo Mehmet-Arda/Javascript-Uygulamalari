@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Music Player Uygulaması</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <style>
+        @import url(css/all.css);
+    </style>
+</head>
+
+<body>
+
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-lg-4 col-xl-4 mx-auto">
+                <div class="card shadow-lg rounded">
+                    <img src="" alt="" id="music-image" class="card-img-top">
+                    <audio id="audio" src=""></audio>
+                    <div id="music-details" class="text-center border-bottom my-3">
+                        <p class="title"></p>
+                        <p class="singer"></p>
+                    </div>
+
+                    <div class="card-body">
+                        <div id="progress">
+                            <input type="range" class="form-range" id="progress-bar">
+                            <div class="times">
+                                <span id="current-time">0:00</span>
+                                <span id="duration">0:00</span>
+                            </div>
+                            </input>
+                            <div id="controls" class="text-center">
+                                <div>
+                                    <button id="prev" class="btn btn-primary rounded-circle">
+                                        <i class="fa-solid fa-backward-step"></i>
+                                    </button>
+                                    <button id="play" class="btn btn-primary rounded-circle mx-2 btn-lg ">
+                                        <i class="fa-solid fa-play"></i>
+                                    </button>
+                                    <button id="next" class="btn btn-primary rounded-circle">
+                                        <i class="fa-solid fa-forward-step"></i>
+                                    </button>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card-footer">
+
+                        <button class="btn btn-primary btn-sm" data-bs-toggle="collapse" data-bs-target="#music-list">
+                            <i class="fa-solid fa-bars"></i>
+                        </button>
+                        <div class="volume-container">
+                            <i id="volume" class="fa-solid fa-volume-high mx-2"></i>
+                            <input type="range" id="volume-bar" class="form-range" min="0" max="100" value="100">
+                        </div>
+                    </div>
+
+                    <div id="music-list" class="collapse">
+                        <ul class="list-group ">
+
+                            <!-- <li
+                                class="list-group list-group-flush d-flex flex-row justify-content-between align-items-center px-2 m-3">
+                                <span class="">Boşver - Nilüfer</span>
+                                <span class="badge bg-primary rounded-pill">3:40</span>
+                            </li> -->
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+    <script src="js/custom/music.js"></script>
+    <script src="js/custom/musicplayer.js"></script>
+    <script src="js/bootstap/bootstrap.bundle.min.js"></script>
+    <script src="js/custom/extra.js"></script>
+</body>
+
+</html>
